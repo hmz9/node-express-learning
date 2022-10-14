@@ -40,11 +40,11 @@ dishRouter
     res.end('POST operation not supported on /dishes/' + req.params.dishId);
   })
   .put((req, res, next) => {
-    res.write('Updateing the dish: ' + req.params.dishId + '\n');
+    res.write('Updating the dish: ' + req.params.dishId + '\n');
     res.end('Updated details about dish: ' + req.params.dishId);
   })
   .delete((req, res, next) => {
-    res.end('Deleteing dish:' + req.params.dishId);
+    res.end('Deleteing dish: ' + req.params.dishId);
   });
 
 module.exports = dishRouter;
